@@ -1,16 +1,9 @@
 class Post
   attr_accessor :title, :author
 
-    @@post = []
-
-    def initialize(title, author = nil)
+    def initialize(title)
       @title = title
       @author = author
-      @@post << self
-    end
-
-    def self.all
-      @@post
     end
 
     def artist_name
