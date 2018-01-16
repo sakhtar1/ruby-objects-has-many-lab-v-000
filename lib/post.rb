@@ -8,7 +8,7 @@ class Post
 
   def artist_name
     if self.author
-      self.author.title
+      self.author.posy
     else
       nil
     end
