@@ -10,6 +10,10 @@ class Song
     @@songs << self
   end
 
+  def self.all
+    @@songs
+  end
+
   def artist_name
     if self.artist
       self.artist.name
@@ -17,7 +21,6 @@ class Song
       nil
     end
   end
-
 
 
 end
